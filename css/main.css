@@ -590,19 +590,10 @@ body {
   height: 100px;
 }
 
-.step-1 {
-  background-image: url('../Frame-desk-1.png');
+.tx {
+  top: 43px;
+  font-size: 28px;
 }
-
-.step-2 {
-  background-image: url('../Frame-desk-2.png');
-}
-
-.step-3 {
-  background-image: url('../Frame-desk-3.png');
-}
-
-
 }
 
 
