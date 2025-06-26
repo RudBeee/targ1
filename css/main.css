@@ -551,9 +551,9 @@ body {
 
 .wrapp {
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  max-width: 2000px;
+  max-width: 1464px;
   gap: 16px;
 }
 
