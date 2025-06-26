@@ -5,6 +5,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../images/fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../images/fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .logo,
 .btn {
@@ -217,28 +231,43 @@ position: relative;
 }
 
 .step {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+
   width: 233px;
   height: 64px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+
+
+}
+
+.tx {
+  position: absolute;
+  top: 20px;
+font-family: Source Sans Pro;
+  color: rgba(241, 236, 231, 1);
+font-weight: 700;
+font-size: 14px;
+line-height: 34px;
+text-transform: capitalize;
 }
 
 .step-1 {
-  background-image: url('../Frame-mob-1.png');
+  background-image: url('../Frame-desk-1.png');
 }
 
 .step-2 {
-  background-image: url('../Frame-mob-2.png');
+  background-image: url('../Frame-desk-2.png');
 }
 
 .step-3 {
-  background-image: url('../Frame-mob-3.png');
+  background-image: url('../Frame-desk-3.png');
 }
 
-@media (min-width: 481px) and (max-width: 766px) {
-
-}
 
 @media (min-width: 767px) and (max-width: 1439px) {
   body {
@@ -318,37 +347,34 @@ position: relative;
 .step {
   width: 419px;
   height: 100px;
-
 }
 
-.step-1 {
-  background-image: url('../Frame-mob-1.png');
+.tx {
+  top: 37px;
+  font-size: 28px;
 }
 
-.step-2 {
-  background-image: url('../Frame-mob-2.png');
-}
-
-.step-3 {
-  background-image: url('../Frame-mob-3.png');
-}
 
 }
 
 
 @media (min-width: 1440px) and (max-width: 1919px) {
-body {
+  html {
+    overflow: hidden;
+  }
+ body {
   background-image:  url('../images/bg-desk.webp');
   overflow: hidden;
 }
 
 .block--1 {
-  padding-top: 50px;
+  padding-top: 20px;
   display: flex;
   margin: 0 auto;
   max-width: 1600px;
   overflow: hidden;
   align-items: top;
+
 }
 
 .main {
@@ -382,18 +408,21 @@ body {
   justify-content: center;
   align-items: start;
   padding-left: 50px;
+    position: relative;
+  z-index: 800;
 }
 
 .text-top-1 {
-  font-size: 40px;
+  font-size: 36px;
   line-height: 40px;
   margin-bottom: 30px;
 }
 
 .text-top-2 {
-  font-size: 78px;
+  font-size: 68px;
   margin-bottom: 30px;
   text-align: start;
+
 }
 
 .btn {
@@ -401,6 +430,8 @@ body {
   width: 302px;
   height: 64px;
   margin-bottom: 30px;
+    position: relative;
+  z-index: 999;
 }
 
 .characters {
@@ -430,9 +461,9 @@ body {
 
 .wrapp {
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  max-width: 1600px;
+  max-width: 1300px;
   gap: 16px;
 }
 
@@ -441,24 +472,21 @@ body {
   height: 100px;
 }
 
-.step-1 {
-  background-image: url('../Frame-desk-1.png');
-}
-
-.step-2 {
-  background-image: url('../Frame-desk-2.png');
-}
-
-.step-3 {
-  background-image: url('../Frame-desk-3.png');
+.tx {
+  top: 37px;
+  font-size: 28px;
 }
 
 }
 
 
 @media (min-width: 1920px) {
+
+    html {
+    overflow: hidden;
+  }
+
 body {
-  /* padding-top: 40px; */
   background-image:  url('../images/bg-desk.webp');
   overflow: hidden;
 }
