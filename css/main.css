@@ -269,7 +269,7 @@ text-transform: capitalize;
 }
 
 
-@media (min-width: 767px) and (max-width: 1439px) {
+@media (min-width: 767px) and (max-width: 1025px) {
   body {
   background-image:  url('../images/bg-tab.webp');
 }
@@ -357,6 +357,124 @@ text-transform: capitalize;
 
 }
 
+@media (min-width: 1026px) and (max-width: 1439px) {
+ html {
+    overflow: hidden;
+  }
+ body {
+  background-image:  url('../images/bg-desk.webp');
+  overflow: hidden;
+}
+
+.block--1 {
+  padding-top: 0;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1150px;
+  overflow: hidden;
+  align-items: top;
+
+}
+
+.main {
+  padding-top: 30px;
+}
+
+  .logos {
+    padding: 0 0 0 50px;
+    width: 500px;
+    height: 95px;
+    margin: 0;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .logo1 {
+    width: 200px;
+    height: 70px;
+    background-image: url('../logo-desk.webp');
+  }
+
+  .logo2 {
+    width: 280px;
+    height: 65px;
+    background-image: url('../logo2-desk.webp');
+  }
+
+.text-top {
+  width: 450px;
+  margin: 0;
+  justify-content: center;
+  align-items: start;
+  padding-left: 50px;
+    position: relative;
+  z-index: 800;
+}
+
+.text-top-1 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.text-top-2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.btn {
+  font-size: 18px;
+  width: 302px;
+  height: 64px;
+  margin-bottom: 30px;
+    position: relative;
+  z-index: 999;
+}
+
+.characters {
+  width: 875px;
+  height: 630px;
+  background-image: url('../images/char-desk.png');
+  background-position: bottom right;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding-bottom: 40px;
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 102.25%);
+  z-index: 2;
+}
+
+.footer-text {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.wrapp {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  gap: 10px;
+}
+
+.step {
+  width: 419px;
+  height: 100px;
+}
+
+.tx {
+  top: 42px;
+  font-size: 24px;
+}
+}
 
 @media (min-width: 1440px) and (max-width: 1919px) {
   html {
